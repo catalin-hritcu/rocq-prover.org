@@ -12,8 +12,8 @@ def extract_details_from_html(html_content,lifecycle):
 
     for block in details_blocks:
         name_match = re.search(r'<summary><a .*?>(.*?)<', block)
-        source_match = re.search(r'<summary><a href=\"(.*?)\">', block)
-        license_match = re.search(r'<dt><b>license</b></dt><dd> <a href=\"(.*?)\"', block)
+        source_match = re.search(r'<summary><a href=\"([^\"]*)', block)
+        license_match = re.search(r'<dt><b>license</b></dt><dd> <a href=\"([^\"]*)', block)
         synopsis_match = re.search(r'\(.*?\)(.*?)</summary>', block)
         description_match = re.search(r'<dt><b>description</b></dt><dd>(.*?)</dd>', block, re.DOTALL)
 
@@ -22,7 +22,7 @@ def extract_details_from_html(html_content,lifecycle):
             source = source_match.group(1) if len(source_match.group(1)) > 1 else "https://github.com"
             license = license_match.group(1) if license_match else "Unknown"
             synopsis = synopsis_match.group(1) if len(synopsis_match.group(1)) > 1 else "No synopsis available"
-            description = re.sub(r'<[^>]*>', '', description_match.group(1)).replace('<br>', ' ') if description_match else "No description available"
+            description = re.sub(r'<[^>]*>', '', description_match.group(1).replace('<br>', ' ')) if description_match else "No description available"
 
             packages.append({
                 "name": name,
