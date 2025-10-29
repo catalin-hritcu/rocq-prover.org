@@ -43,6 +43,12 @@ Layout.render
     <div class="py-10 lg:py-28">
         <div class="container-fluid">
             <div class="prose dark:prose-invert prose-orange px-6 lg:prose-lg max-w-5xl">
+                <h2 id="highlights"><a class="anchor" aria-hidden="true" href="#highlights"></a>Highlights</h2>
+                <%s! release.highlights_html %>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="prose dark:prose-invert prose-orange px-6 lg:prose-lg max-w-5xl">
                 <%s! release.body_html %>
               </div>
         </div>
