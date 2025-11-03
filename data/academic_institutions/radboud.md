@@ -22,11 +22,13 @@ courses:
       lecture_notes: true
       exercises: true
     - name: Logic and Applications (BSc)
+      url: https://ru.osiris-student.nl/onderwijscatalogus/extern/cursus?cursuscode=NWI-IPI004&collegejaar=2025
       teacher: Engelbert Hubbers
       year: 2024
       lecture_notes: true
       exercises: true
     - name: Semantics and Correctness (BSc)
+      url: https://ru.osiris-student.nl/onderwijscatalogus/extern/cursus?cursuscode=NWI-IBC026&collegejaar=2025
       teacher: Engelbert Hubbers
       year: 2024
       lecture_notes: true
