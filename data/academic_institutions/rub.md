@@ -15,9 +15,12 @@ courses:
       year: 2026
       lecture_notes: true
       exercises: true
+      video_recordings: true
     - name: Foundations of Programming Languages, Verification, and Security
       acronym: FoE
       url: https://moodle.ruhr-uni-bochum.de/enrol/index.php?id=62598
-      lecture_notes: true
       year: 2025
+      lecture_notes: true
+      exercises: true
+      video_recordings: true
 ---
