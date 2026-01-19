@@ -11,14 +11,14 @@ location:
 courses:
     - name: Proofs are Programs
       acronym: PaP
-      url: https://moodle.ruhr-uni-bochum.de/enrol/index.php?id=60387&lang=en
+      url: https://catalin-hritcu.github.io/teaching.html#pap
       year: 2026
       lecture_notes: true
       exercises: true
       video_recordings: true
     - name: Foundations of Programming Languages, Verification, and Security
       acronym: FoE
-      url: https://moodle.ruhr-uni-bochum.de/enrol/index.php?id=62598&lang=en
+      url: https://catalin-hritcu.github.io/teaching.html#foe
       year: 2025
       lecture_notes: true
       exercises: true
